@@ -188,36 +188,34 @@ export default function Home() {
 
           <div className="relative z-10 flex flex-col items-center text-center">
             {/* Main Headline */}
-            <h1 className="mb-8 animate-fadeUp text-balance text-[clamp(36px,5vw,72px)] font-medium leading-[1.1] text-white opacity-0 [animation-delay:0.1s]">
-              Building the agent<br />
+            <h1 className="mb-6 animate-fadeUp text-balance text-[clamp(36px,5vw,72px)] font-medium leading-[1.1] text-white opacity-0 [animation-delay:0.1s]">
+              Let your ideas<br />
               <span className="relative inline-block">
-                economy <span className="bg-gradient-to-r from-[#F7931A] via-[#FFAA40] to-[#F7931A] bg-clip-text text-transparent">on Bitcoin.</span>
+                earn <span className="bg-gradient-to-r from-[#F7931A] via-[#FFAA40] to-[#F7931A] bg-clip-text text-transparent">for you.</span>
                 <span className="absolute -inset-x-4 -inset-y-2 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(247,147,26,0.15)_0%,transparent_70%)] blur-2xl"></span>
               </span>
             </h1>
 
             {/* Subheadline */}
-            <p className="mb-12 animate-fadeUp text-[clamp(16px,1.6vw,18px)] leading-[1.7] tracking-normal text-white/50 opacity-0 [animation-delay:0.2s]">
-              Join the AIBTC public working group<br />
-              and start contributing today.
+            <p className="mb-10 animate-fadeUp text-[clamp(16px,1.6vw,20px)] leading-[1.7] tracking-normal text-white/60 opacity-0 [animation-delay:0.2s]">
+              Build an agent with its own Bitcoin wallet<br />
+              and paid services in 10 minutes or less.
             </p>
 
             {/* CTA */}
             <div className="animate-fadeUp opacity-0 [animation-delay:0.35s]">
               <a
-                href="https://www.addevent.com/event/UM20108233"
-                className="inline-flex items-center justify-center rounded-xl bg-[#F7931A] px-7 py-3.5 text-[15px] font-medium text-white transition-all duration-200 hover:bg-[#E8850F] active:scale-[0.98]"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#guide"
+                className="inline-flex items-center justify-center rounded-xl bg-[#F7931A] px-8 py-4 text-[16px] font-medium text-white transition-all duration-200 hover:bg-[#E8850F] active:scale-[0.98]"
               >
-                Join Weekly Call
+                Start Building
               </a>
             </div>
           </div>
 
           {/* Scroll indicator */}
           <a
-            href="#our-stack"
+            href="#guide"
             className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fadeIn p-3 text-white/30 opacity-0 transition-colors duration-200 [animation-delay:0.6s] hover:text-white/50 max-md:bottom-8 max-md:p-4"
             aria-label="Scroll to learn more"
           >
@@ -227,7 +225,146 @@ export default function Home() {
           </a>
         </section>
 
-        {/* Get Started Section */}
+        {/* Interactive Guide Section */}
+        <section id="guide" className="relative scroll-mt-24 px-12 py-[120px] max-lg:px-8 max-lg:py-[90px] max-md:scroll-mt-20 max-md:px-6 max-md:py-[72px]">
+          <div className="mx-auto max-w-[1200px]">
+            {/* Section Header */}
+            <div className="mb-12 text-center max-md:mb-10">
+              <span className="mb-4 inline-block rounded-full border border-[#F7931A]/30 bg-[#F7931A]/10 px-4 py-1.5 text-[13px] font-medium text-[#F7931A]">
+                ~10 min Interactive Guide
+              </span>
+              <h2 className="mb-4 text-balance text-[clamp(32px,4vw,48px)] font-medium text-white max-md:text-[28px]">
+                Zero to Earning in 5 Steps
+              </h2>
+              <p className="mx-auto max-w-[480px] text-[clamp(16px,1.5vw,18px)] leading-[1.7] tracking-normal text-white/50 max-md:text-[15px]">
+                Open your terminal and copy the example prompts.
+              </p>
+            </div>
+
+            {/* Guide Content - Steps + Terminal */}
+            <div className="grid grid-cols-2 gap-8 max-lg:grid-cols-1 max-lg:gap-6">
+              {/* Steps */}
+              <div className="flex flex-col gap-2">
+                {/* Step 1 - Install */}
+                <div className="group relative overflow-hidden rounded-xl border border-[#F7931A]/30 bg-[rgba(247,147,26,0.08)] p-5 transition-all duration-200">
+                  <div className="flex items-center gap-4">
+                    <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-[#F7931A] text-sm font-semibold text-white">
+                      1
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-[16px] font-semibold text-white">Install</h3>
+                      <p className="text-[13px] text-white/50">Get Claude Code + wallet tools</p>
+                    </div>
+                    <svg className="size-5 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Step 2 - Configure */}
+                <div className="group relative overflow-hidden rounded-xl border border-white/[0.08] bg-[rgba(20,20,20,0.6)] p-5 transition-all duration-200 hover:border-white/[0.15] hover:bg-[rgba(28,28,28,0.7)]">
+                  <div className="flex items-center gap-4">
+                    <div className="flex size-8 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 text-sm font-semibold text-white/70">
+                      2
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-[16px] font-semibold text-white">Configure</h3>
+                      <p className="text-[13px] text-white/50">Connect your Stacks wallet</p>
+                    </div>
+                    <svg className="size-5 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Step 3 - Deploy */}
+                <div className="group relative overflow-hidden rounded-xl border border-white/[0.08] bg-[rgba(20,20,20,0.6)] p-5 transition-all duration-200 hover:border-white/[0.15] hover:bg-[rgba(28,28,28,0.7)]">
+                  <div className="flex items-center gap-4">
+                    <div className="flex size-8 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 text-sm font-semibold text-white/70">
+                      3
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-[16px] font-semibold text-white">Deploy</h3>
+                      <p className="text-[13px] text-white/50">Launch your first paid endpoint</p>
+                    </div>
+                    <svg className="size-5 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Step 4 - Earn */}
+                <div className="group relative overflow-hidden rounded-xl border border-white/[0.08] bg-[rgba(20,20,20,0.6)] p-5 transition-all duration-200 hover:border-white/[0.15] hover:bg-[rgba(28,28,28,0.7)]">
+                  <div className="flex items-center gap-4">
+                    <div className="flex size-8 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 text-sm font-semibold text-white/70">
+                      4
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-[16px] font-semibold text-white">Earn</h3>
+                      <p className="text-[13px] text-white/50">Watch payments flow in</p>
+                    </div>
+                    <svg className="size-5 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Step 5 - Scale */}
+                <div className="group relative overflow-hidden rounded-xl border border-white/[0.08] bg-[rgba(20,20,20,0.6)] p-5 transition-all duration-200 hover:border-white/[0.15] hover:bg-[rgba(28,28,28,0.7)]">
+                  <div className="flex items-center gap-4">
+                    <div className="flex size-8 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 text-sm font-semibold text-white/70">
+                      5
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-[16px] font-semibold text-white">Scale</h3>
+                      <p className="text-[13px] text-white/50">Build more, earn more</p>
+                    </div>
+                    <svg className="size-5 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              {/* Terminal */}
+              <div className="overflow-hidden rounded-xl border border-white/[0.08] bg-[#0d0d0f]">
+                {/* Terminal Header */}
+                <div className="flex items-center justify-between border-b border-white/[0.06] bg-[rgba(20,20,20,0.8)] px-4 py-3">
+                  <div className="flex items-center gap-2">
+                    <span className="size-3 rounded-full bg-[#ef4444]" />
+                    <span className="size-3 rounded-full bg-[#eab308]" />
+                    <span className="size-3 rounded-full bg-[#22c55e]" />
+                  </div>
+                  <span className="text-[12px] text-white/40">Terminal — zsh</span>
+                  <button className="text-[12px] text-white/40 transition-colors hover:text-white/60">
+                    Copy
+                  </button>
+                </div>
+                {/* Terminal Body */}
+                <div className="p-5 font-mono text-[13px] leading-[1.8]">
+                  <div className="text-white/60">
+                    <span className="text-white/40">&gt;</span>{" "}
+                    <span className="text-white">npm install -g @anthropic-ai/claude-code</span>
+                  </div>
+                  <div className="text-white/40">added 1 package</div>
+                  <div className="mt-3 text-white/60">
+                    <span className="text-white/40">&gt;</span>{" "}
+                    <span className="text-white">npx @aibtc/mcp-server@latest --install</span>
+                  </div>
+                  <div className="text-[#22c55e]">✓ Added aibtc MCP server to Claude Code</div>
+                  <div className="text-[#22c55e]">✓ Configured for mainnet</div>
+                  <div className="mt-3 text-white/60">Restart your terminal to begin.</div>
+                  <div className="mt-3 text-white/60">
+                    <span className="text-white/40">&gt;</span>{" "}
+                    <span className="animate-pulse text-white">|</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Stack Section */}
         <section
           className="relative flex min-h-screen flex-col items-center justify-center px-12 py-[120px] max-lg:px-8 max-lg:py-[90px] max-md:px-6 max-md:py-[72px]"
           id="our-stack"
@@ -236,10 +373,10 @@ export default function Home() {
             {/* Intro */}
             <div className="mb-12 text-center max-md:mb-10">
               <h2 className="mb-4 text-balance text-[clamp(32px,4vw,48px)] font-medium text-white max-md:text-[28px]">
-                Our Stack
+                Built on Open Standards
               </h2>
               <p className="mx-auto max-w-[520px] text-[clamp(16px,1.5vw,18px)] leading-[1.7] tracking-normal text-white/50 max-md:text-[15px]">
-                Open-source building blocks powering the agent economy on Bitcoin.
+                Every piece is open source. Inspect it, fork it, improve it.
               </p>
             </div>
 
@@ -395,92 +532,27 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Guidance prompt */}
-              <div className="mt-16 flex justify-center max-md:mt-12">
-                <a
-                  href="#guide"
-                  className="inline-flex flex-col items-center gap-2 text-white/40 transition-colors duration-200 hover:text-white/60"
-                >
-                  <span className="text-sm">Need guidance?</span>
-                  <svg className="size-4 animate-bounce-slow" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </section>
 
-        {/* Guide Section */}
-        <section id="guide" className="relative scroll-mt-24 px-12 pb-[220px] pt-[140px] max-lg:px-8 max-lg:pb-[180px] max-lg:pt-[120px] max-md:scroll-mt-20 max-md:px-6 max-md:pb-[140px] max-md:pt-[100px]">
-          <div className="mx-auto max-w-[800px]">
-            {/* Section Header */}
-            <div className="mb-12 text-center max-md:mb-10">
-              <h2 className="mb-4 text-balance text-[clamp(32px,4vw,48px)] font-medium text-white max-md:text-[28px]">
-                Getting Started
-              </h2>
-              <p className="text-[clamp(16px,1.5vw,18px)] leading-[1.7] tracking-normal text-white/50 max-md:text-[15px]">
-                Anyone can use agents to start building and contributing to AIBTC.
-              </p>
-            </div>
-
-            <Link
-              href="/guide"
-              className="group relative block overflow-hidden rounded-2xl border border-white/[0.08] bg-[rgba(20,20,20,0.6)] backdrop-blur-sm transition-all duration-200 hover:border-white/[0.15] hover:bg-[rgba(28,28,28,0.7)]"
+        {/* Community Section */}
+        <section className="relative px-12 pb-[140px] pt-[80px] max-lg:px-8 max-lg:pb-[100px] max-lg:pt-[60px] max-md:px-6 max-md:pb-[80px] max-md:pt-[48px]">
+          <div className="mx-auto max-w-[600px] text-center">
+            <h2 className="mb-4 text-balance text-[clamp(24px,3vw,32px)] font-medium text-white max-md:text-[22px]">
+              Ready to build?
+            </h2>
+            <p className="mb-8 text-[clamp(15px,1.4vw,17px)] leading-[1.7] text-white/50 max-md:mb-6 max-md:text-[15px]">
+              Join the community and share what you create.
+            </p>
+            <a
+              href="https://discord.gg/fyrsX3mtTk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-xl bg-[#F7931A] px-8 py-4 text-[15px] font-medium text-white transition-all duration-200 hover:bg-[#E8850F] active:scale-[0.98]"
             >
-              {/* Top accent line */}
-              <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-[#F7931A]/30 to-transparent" />
-
-              {/* Stacked pages effect */}
-              <div className="absolute -bottom-1.5 left-3 right-3 h-3 rounded-b-xl border-x border-b border-white/[0.04] bg-[rgba(16,16,16,0.5)]" />
-              <div className="absolute -bottom-3 left-6 right-6 h-3 rounded-b-xl border-x border-b border-white/[0.02] bg-[rgba(12,12,12,0.4)]" />
-
-              <div className="relative flex gap-6 p-8 max-md:flex-col max-md:p-6">
-                {/* Book icon */}
-                <div className="flex size-14 shrink-0 items-center justify-center rounded-xl border border-[rgba(247,147,26,0.25)] bg-gradient-to-br from-[rgba(247,147,26,0.15)] to-[rgba(247,147,26,0.05)] max-md:size-12">
-                  <svg className="size-7 text-[#F7931A] max-md:size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </div>
-
-                {/* Content */}
-                <div className="flex-1">
-                  <div className="mb-1.5 flex items-center gap-2">
-                    <span className="rounded bg-[#F7931A]/20 px-2 py-0.5 text-[11px] font-medium uppercase tracking-wide text-[#F7931A]">Guide</span>
-                    <span className="text-[12px] text-white/40">~30 min</span>
-                  </div>
-                  <h3 className="mb-2 text-balance text-[20px] font-semibold text-white max-md:text-[18px]">
-                    Vibe Coding with Bitcoin Agents
-                  </h3>
-                  <p className="mb-4 text-[14px] leading-relaxed text-white/50">
-                    Build AI agents with Bitcoin wallets and payment-gated APIs.
-                  </p>
-
-                  {/* Steps preview */}
-                  <div className="flex flex-wrap gap-x-4 gap-y-1.5 text-[13px] text-white/40">
-                    <span className="flex items-center gap-1.5">
-                      <span className="size-1.5 rounded-full bg-[#D97757]" />
-                      Claude Code
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <span className="size-1.5 rounded-full bg-[#F7931A]" />
-                      Agent Wallet
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <span className="size-1.5 rounded-full bg-[#B4CCFF]" />
-                      x402 Endpoints
-                    </span>
-                  </div>
-                </div>
-
-                {/* Arrow */}
-                <div className="flex items-center self-center text-white/30 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#F7931A] max-md:self-start">
-                  <svg className="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
+              Join AIBTC Discord
+            </a>
           </div>
         </section>
       </main>
